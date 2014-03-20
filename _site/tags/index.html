@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="{{ site.author }}" />
-    <title>{{ page.title }} | {{ site.author }}</title>
+    <meta name="author" content="ChrisVoid" />
+    <title>tags | ChrisVoid</title>
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAD/APr59wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiAAAiIiIiIiIAACIiIiIiIgERERERERIiAREREREREiIBERERERESIgERIiIiERIiAREiIiIREiIBESIhERESIgERIiERERIiAREiIiIiIiIBESIiIiIiIgERIiIiIiIiAREREREREAABEREREREQAAERERERERAADgAQAA4AEAAOABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAA8AAAAPAAAADwAA" rel="icon" type="image/x-icon" />
-    <link href="/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
+    <link href="/feed/" rel="alternate" title="ChrisVoid" type="application/atom+xml" />
     
     <link rel="stylesheet" href="/media/css/highlight.css">
     <link href='/media/webfonts/ss-social.css' rel='stylesheet'>
@@ -26,16 +26,61 @@
           <a href="/about" class="ss-icon" title="About" >user</a>
           <a href="/feed" class="ss-icon" title="Subscribe by RSS" >rss</a>
         </div>
-        <h1>{{ page.title }}</h1>
+        <h1>tags</h1>
         </header>
         <hr>
         <article class="content">
-        {{ content }}
+        <section class="post">
+<div id='tag_cloud'>
+
+<a href="#git" title="git" rel="1">git</a>
+
+</div>
+
+
+
+
+<ul class="listing">
+
+  <li class="listing-seperator" id="git">git</li>
+
+  <li class="listing-item">
+  <time datetime="2014-02-10">2014-02-10</time>
+  <a href="http://chrisvoid.github.io/2014/02/objc-lib/" title="谈谈objc公用库">谈谈objc公用库</a>
+  </li>
+
+
+</ul>
+
+
+
+
+<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
+
+
+<p></p>
+
+<script language="javascript">
+$.fn.tagcloud.defaults = {
+    size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#f8e0e6', end: '#ff3333'}
+};
+
+$(function () {
+    $('#tag_cloud a').tagcloud();
+});
+</script>
+
+
+</section>
+
+
+
         </article>
       </div>
 
     <footer>
-        <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2008 - {{site.time | date:"%Y"}} by <a href="http://chrisvoid.github.io/about/">ChrisVoid</a> | <span class="label label-info">{{site.time | date:"%Y-%m-%d %H:%M:%S %Z"}}</span></small></p>
+        <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2008 - 2014 by <a href="http://chrisvoid.github.io/about/">ChrisVoid</a> | <span class="label label-info">2014-03-20 11:38:13 CST</span></small></p>
     </footer>
 
     </div>

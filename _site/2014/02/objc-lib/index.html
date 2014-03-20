@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="ChrisVoid" />
+    <title>谈谈objc公用库 | ChrisVoid</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAD/APr59wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiAAAiIiIiIiIAACIiIiIiIgERERERERIiAREREREREiIBERERERESIgERIiIiERIiAREiIiIREiIBESIhERESIgERIiERERIiAREiIiIiIiIBESIiIiIiIgERIiIiIiIiAREREREREAABEREREREQAAERERERERAADgAQAA4AEAAOABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAA8AAAAPAAAADwAA" rel="icon" type="image/x-icon" />
+    <link href="/feed/" rel="alternate" title="ChrisVoid" type="application/atom+xml" />
+    
+    <link rel="stylesheet" href="/media/css/highlight.css">
+    <link href='/media/webfonts/ss-social.css' rel='stylesheet'>
+    <link href='/media/webfonts/ss-standard.css' rel='stylesheet'>
+    <link href="/media/css/screen.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/media/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <div class="buttons">
+          <a href="/" class="ss-icon" title="Go to homepage">home</a>
+          <a href="/categories" class="ss-icon" title="Category" >list</a>
+          <a href="/tags" class="ss-icon" title="Tag Cloud" >tags</a>
+          <a href="/guestbook" class="ss-icon" title="Guest Book" >talk</a>
+          <a href="/about" class="ss-icon" title="About" >user</a>
+          <a href="/feed" class="ss-icon" title="Subscribe by RSS" >rss</a>
+        </div>
+        <h1>谈谈objc公用库</h1>
+        </header>
+        <hr>
+        <article class="content">
+        <section class="post">
+<h2>一.概述</h2>
+
+<p>objc公用库的使用场景还是比较常见的，iOS SDK本身就是公用库的集合；一些开放平台为了方便开发者开发第三方的app，提供相应平台的sdk；还有一个场景就是比较大的公司一般会有多个甚至几十个app，各个app之间势必会有重复的逻辑，为了 “提升效率”“安全性” 或者业务指标，会推一些公用的库供内部各个app使用。 <br/>
+公用库本质上就是一些可重用逻辑的集合，是“分而治之”的一种途径，其出现的形式可以是源码亦或是二进制。 <br/>
+公用库也需要理清自己的依赖关系，比如依赖系统SDK的哪些库的哪些接口（决定了公用库适用的系统版本），依赖哪些第三方的库。不过你想把一个东西拿出去给别人用，那你就得想方设法去减少不必要的依赖。 <br/>
+作为一个公用库的开发者，提供公用库给别人使用时，需要站在使用者的角度去思考问题，公用库的接口以及接入使用的繁简体现了公用库作者的职业道德和素养。</p>
+
+<h2>二.设计与实现</h2>
+
+<p>第一步当然是明确公用库的目标，要做什么，不做什么，一二三四列出来，并在后继的实现中最大可能地坚持目标原则。  <br/>
+项目的构建也有几种选择：</p>
+
+<ul>
+<li>使用XCode的"Cocoa Touch Static Library"项目模板新建项目，target为一个静态库</li>
+<li>安装 <a href="https://github.com/kstenerud/iOS-Universal-Framework">iOS Universal Framework</a> ,然后在XCode中通过其提供的"Static iOS Framework"项目模板新建项目，其target为framework库</li>
+</ul>
+
+
+<p>另外你可以在上面的基础上，通过<a href="http://cocoapods.org/">cocoapods</a>来管理你自己的公用库的依赖。</p>
+
+<p>在实现的时候，公用库自身的源码全都放到某个目录中或者其子目录中(是指那些可以直接拷贝出去使用的源码，不包括自身编译所依赖的文件，比如prefix.pch)。 <br/>
+头文件只暴漏那些必须的，在实现库的时候能够在实现文件中进行引入的的则在实现文件中进行引入，如果在需要暴漏的头文件中引入另一个头文件，那么这另一个头文件也必须要暴漏出来。   <br/>
+另一个常见的问题便是接口的方法声明不遵循objc的语言规范，给人以山寨的感觉。还是建议公用库的实现最好有一个当前语言的老手带着做，熟悉当前语言的规范和常用的范式，比如何时使用delegate，何时使用block。 <br/>
+还有就是在实现的时候尽可能少地引入第三方的依赖，如果确实需要引入，那么编译的时候千万别把公用库自身依赖的第三方的内容当成自己的一部分，如果你很变态，硬要把第三方的内容搞成自己的一部分，那么你至少得修改这些依赖的相关类的类名，静态变量名，如果是category，还得修改其方法名。    <br/>
+最后就是你得坚持良好的注释和文档 ，某个方法 如有特殊的需要注意的点，则需要注释说明，你还得提供一个README文件，用于描述当前库的目的，以及各个接口的使用范例。</p>
+
+<h2>三.分发与集成</h2>
+
+<p>其实在公用库构建的初期，你就得想好分发的方式。一种好的分发方式可以大大降低公用库集成使用的成本。 <br/>
+一个公用库要给别人用，无非就两种形式：源码或者二进制格式（额外提供头文件，资源文件），源码的形式，方便使用者进行调试，二进制格式则适用于那些不方便公开源码的公用库。</p>
+
+<ul>
+<li>先谈谈源码的形式，源码一般放在某个版本控制库中
+
+<ul>
+<li>在以前很多人就直接下载下来将相关类拷贝进自己的工程中，然后直接使用，这样的坏处就是没法明确知道此公用库的版本以及此库作者做了更新后，你还得手动拷贝一次，比较麻烦。</li>
+<li>后来就开始用git的submodule，主工程无需将某个公用库的源码放到自己的git库中了，而且三方库可以方便的进行更新切换分支等操作，这种情况下最好是将主工程依赖此三方库项目编译出来的target，比如静态库，这样当公用库有增删文件的时候，无需修改主工程项目文件。</li>
+<li>最近我比较推荐的就是cocoapods的方式了，它的主要优点就是依赖关系的管理，当然其本质上也是将公用库编译成静态库，然后使得主工程依赖此静态库。</li>
+</ul>
+</li>
+<li>二进制的形式需要谈的东西还是比较多的，二进制一般有两种方式
+
+<ul>
+<li>一种是简单的静态库，也就是常见的 xxx.a 文件, 只不过真正使用的时候需要提供头文件或者资源文件，一般资源文件都是以bundle的形式提供。XCode中默认提供的就是这种方式，只不过你创建公用库项目的时候编译出来静态库只支持特定的一种硬件架构体系，如果你想生成一个Universal的静态库的话，那么你得通过工具来将多个静态库进行合并。</li>
+<li>另一种便是framework的方式，此方式XCode默认并不支持。你在iOS开发的过程中应该接触过不少framework库，这种库都是系统自带的库，供系统中运行的所有app共享使用。framework库的好处就是不但可以包含二进制文件，还可以包含头文件，资源文件等，甚至可以支持多个版本。各个app所使用的自己的公用库，最终都需要link进可执行文件件的，所以本质上还是一个静态库。所以有一些第三方的方案比如<a href="https://github.com/kstenerud/iOS-Universal-Framework">iOS Universal Framework</a>，能够帮助你使用XCode来编译出framework库，当然其中还是有不少坑，比如XCode并不识别framework中的资源文件所以有了Embedded Framework的方案，虽然framework最终只是一个bundle（一个文件夹，里面按照规定的目录结构方式文件），但是对XCode而言这样的target还是有真假（Real／Fake）之分，只有真的情况下XCode主工程在添加依赖的时候才能够选择此公用库项目的framework涨的target。</li>
+<li>cocoapods也是支持管理二进制格式的，在podspec中通过vendored_frameworks或者vendored_libraries来指定你需要分发的库</li>
+</ul>
+</li>
+</ul>
+
+
+<p>当然不管你以何种方式分发你的公用库，你都得明确声明此公用库适用的系统版本，依赖哪些系统SDK的框架或者静态库，依赖哪些第三方的库以及对应的版本，这是对自己负责也是对别人负责。 <br/>
+在使用公用库的时候，XCode都是通过header search path来寻找静态库的头文件的，通过framework search path来寻找framework的，当使用cocoapods来管理的时候，这些环境变量的设置都是自动帮你完成的，在其生成的xcconfig文件中。</p>
+
+<h2>四.和库相关的几个命令</h2>
+
+<p>下面几个命令都是和二进制库相关的，这些二进制文件可以叫做对象文件，在Mac或者iOS平台中用的都是<a href="http://zh.wikipedia.org/wiki/Mach-O">Mach-O</a>(Mach Object)，所以这些命令其实都是读取或者操作Mach Object的，你可以通过<code>man</code>来查看相应的详情用户手册。</p>
+
+<ul>
+<li>nm <br/>
+ display name list (symbol table)，其实就是把对象文件中的相关符号标识都列出来</li>
+<li>otool <br/>
+ otool，顾名思义就是object tool，比其nm来说，其功能更强大，可以查看对象文件的方方面面，比如展示对象文件的Mach Header，用到了哪些共享库（shared libraries），或者数据段内容等。</li>
+<li>lipo  <br/>
+ create or operate on universal files，此命令主要是帮你查看或者创建支付多平台的静态库的。比如将两台不同平台的静态进行合并。</li>
+</ul>
+
+
+</section>
+<section class="meta">
+<span class="author">
+  <a href="http://geeklu.com">ChrisVoid</a>
+</span>
+<span class="time">
+  /
+  <time datetime="2014-02-10">2014-02-10</time>
+</span>
+<br />
+<span class="license">
+  Published under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a>
+</span>
+
+<span class="categories">
+  in categories
+  
+  <a href="/categories/#programming" title="programming">programming</a>&nbsp;
+  
+</span>
+
+
+<span class="tags">
+  tagged with 
+  
+  <a href="/tags/#git" title="git">git</a>&nbsp;
+  
+</span>
+
+</section>
+<section class="comment">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'chrisvoid'; // required: replace example with your forum shortname
+    var disqus_url = 'http://chrisvoid.github.io/2014/02/objc-lib/';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+<script type="text/javascript">
+$(function(){
+  $(document).keydown(function(e) {
+    var url = false;
+        if (e.which == 37 || e.which == 74) {  // Left arrow and J
+            
+        url = 'http://chrisvoid.github.io/2012/11/git-vim-tutorial/';
+        
+        }
+        else if (e.which == 39 || e.which == 75) {  // Right arrow and K
+            
+        }
+        if (url) {
+            window.location = url;
+        }
+  });
+})
+</script>
+
+
+        </article>
+      </div>
+
+    <footer>
+        <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | Copyright 2008 - 2014 by <a href="http://chrisvoid.github.io/about/">ChrisVoid</a> | <span class="label label-info">2014-03-20 11:38:13 CST</span></small></p>
+    </footer>
+
+    </div>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gap.push(['_setAccount', ''])
+      <!--_gaq.push(['_setAccount', 'UA-12936429-2']);-->
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
