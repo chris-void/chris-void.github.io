@@ -59,15 +59,16 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 
 我个人觉得有两个原因:
 	
-	1. 在服务器的领域,基本上Windows已经失败了,发展的方向肯定是Unix内核的操作系统,和Vi打交道是不可能回避的事情. 
-	2. 好用的适合自己的编辑器可以大大提高工作的效率,而追求以键盘的输入取代鼠标作用的Vim/Emacs必然给使用者带来更好地工作体验.
+* 在服务器的领域,基本上Windows已经失败了,发展的方向肯定是Unix内核的操作系统,和Vi打交道是不可能回避的事情. 
+* 好用的适合自己的编辑器可以大大提高工作的效率,而追求以键盘的输入取代鼠标作用的Vim/Emacs必然给使用者带来更好地工作体验.
 
 
-# How to Use Vim
+### How to Use Vim
 
 前面已经给出了CoolShell的[Vim实战教程](http://coolshell.cn/articles/5426.html),我认为已经写的很好了,因此这里不再赘述. 值得注意的一点是Vim和Emacs方面的代码提示做的不是很好,因此涉及网页/C#等等编程的内容必然需要比较复杂的配置,还是使用Sublime比较方便
 
 安装vim:
+
 ```
 //Ubuntu等Debian内核
 sudo apt-get install vim
@@ -83,6 +84,7 @@ sudo brew install vim
 ```
 
 使用操作入门:
+
 ```
 i/o     可从阅读模式进入编辑模式
  
@@ -103,6 +105,7 @@ ESC :q! 强制退出(放弃更改,如果是新建了new file则放弃创建文�
 Emacs的使用比Vim更复杂,可以说我目前也是只使用了一部分功能,但是就是这样已经足以让我放弃Vim了. [GNU Emacs官网](http://www.gnu.org/software/emacs/),具体教程建议去[Emacs中文网](http://emacser.com/)查看.
 
 安装Emacs:
+
 ```
 //Ubuntu等Debian内核
 sudo apt-get install emacs
@@ -118,6 +121,7 @@ sudo brew install emacs
 ```
 
 使用操作入门:
+
 ```
 
 
