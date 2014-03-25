@@ -29,7 +29,7 @@ Sublime安装:
 
 首先点击[Sublime](http://www.sublimetext.com/)选择自己需要的版本(dev代表经常提示更新). 如果是Windows........(没有Linux还来看这个确定不是逗我?!)
 
-```shell
+```python
 cd ~/Downloads
 sudo mv ~/Downloads/SublimXXXX /opt
 cd /opt
@@ -86,17 +86,17 @@ sudo brew install vim
 使用操作入门:
 
 ```
-i/o     可从阅读模式进入编辑模式
+i/o      可从阅读模式进入编辑模式
  
-ESC     退出编辑模式
+ESC      退出编辑模式
 
-ESC :w  对当前的编辑进行保存
+ESC :w   对当前的编辑进行保存
 
-ESC :q  退出 (一般不使用这条命令而是使用下面两条)
+ESC :q   退出 (一般不使用这条命令而是使用下面两条)
 
-ESC :wq 保存当前内容并退出
+ESC :wq  保存当前内容并退出
 
-ESC :q! 强制退出(放弃更改,如果是新建了new file则放弃创建文件)
+ESC :q!  强制退出(放弃更改,如果是新建了new file则放弃创建文件)
 ```
 
 
