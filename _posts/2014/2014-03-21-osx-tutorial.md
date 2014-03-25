@@ -10,7 +10,7 @@
 
 ### Homebrew 
 
-一句话介绍: Homebrew的作用相当于Ubuntu/Debian下的apt-get, Arch下的pacman / yaourt, Fedora下的yum
+介绍: Homebrew的作用相当于Ubuntu/Debian下的apt-get, Arch下的pacman / yaourt, Fedora下的yum
 
 配置:
 
@@ -29,7 +29,7 @@ brew uograde
 
 ### Pip
 
-一句话介绍: 是比较有用的Python开发工具, 
+介绍: 是比较有用的Python开发工具, 
 
 配置:
 
