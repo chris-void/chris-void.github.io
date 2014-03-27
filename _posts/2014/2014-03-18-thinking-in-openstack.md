@@ -1,5 +1,11 @@
 ---
-
+layout: post
+title: Thinking in OpenStack
+categories:
+- OpenStack
+tags:
+- openstack
+- cloud computing
 ---
 
 # Thinking in OpenStack
