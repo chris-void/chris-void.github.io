@@ -8,8 +8,15 @@ tags:
 - cloud computing
 ---
 
-# Thinking in OpenStack
+## 英文资料
 
+[OpenStack开发者社区](https://launchpad.net/openstack)
+
+[Openstack官网](http://www.openstack.org/community)
+
+[Openstack Doc](http://docs.openstack.org/)
+
+## 中文资料
 
 非常好的资料[IBM OpenStack介绍](http://www.ibm.com/developerworks/cn/cloud/library/1402_chenhy_openstacknetwork/)
 
