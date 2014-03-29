@@ -16,6 +16,14 @@ tags:
 
 [Openstack Doc](http://docs.openstack.org/)
 
+### Mailing List
+
+https://wiki.openstack.org/wiki/Mailing_Lists
+
+http://lists.openstack.org/cgi-bin/mailman/listinfo
+
+</br></br></br></br>
+
 ## 中文资料
 
 非常好的资料[IBM OpenStack介绍](http://www.ibm.com/developerworks/cn/cloud/library/1402_chenhy_openstacknetwork/)
