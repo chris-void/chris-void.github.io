@@ -18,9 +18,9 @@ tags:
 
 ### Mailing List
 
-https://wiki.openstack.org/wiki/Mailing_Lists
+[wiki mailing list](https://wiki.openstack.org/wiki/Mailing_Lists)
 
-http://lists.openstack.org/cgi-bin/mailman/listinfo
+[org mailing list](http://lists.openstack.org/cgi-bin/mailman/listinfo)
 
 </br></br></br></br>
 
