@@ -16,6 +16,8 @@ Git是一种分布式的代码管理软件,或者更好的说法是规范. Git�
 
 ## 关于Pro Git
 
+[Pro Git下载地址](http://ishare.iask.sina.com.cn/f/23292123.html)
+
 Git流行的原因:
 
 **从集中管理式迁移到分布管理式**
