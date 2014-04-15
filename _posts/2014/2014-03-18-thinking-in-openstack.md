@@ -8,6 +8,9 @@ tags:
 - cloud computing
 ---
 
+*首先分享一篇有关学习开源知识的文章:*
+[开源项目学习方法ABC](http://yizhaolingyan.net/?p=123)
+
 ## 英文资料
 
 [OpenStack开发者社区](https://launchpad.net/openstack)
@@ -38,5 +41,3 @@ tags:
 
 >[一个博客](http://blog.csdn.net/matt_mao)
 [又一个博客](http://blog.csdn.net/quqi99)
-
-
