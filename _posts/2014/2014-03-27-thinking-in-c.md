@@ -1,6 +1,24 @@
 ---
 ---
 
+### 题外话 
+
+*先说点题外话，之所以想写这篇blog也是因为我现在在看的Jon Erickson的Hacking The Art of Exploitation。看过之后对C Programming有了完全不一样的看法，其实随着后来接触的Programming Language越来越多，自己对Programming的认识也越来越深入，接触了函数式的Haskell，脚本语言的Python Ruby，发现对C、C++又有了全新的认识。 If you think you know C Programming pretty well, strongly recommand you the book written by Jon Erickson. *
+
+## C Programming Language
+
+本来想着写写对C的新认识，但是后来发现现在流传的C的书籍太多了，所以还是分享一点自己的对于C的总结，这样读者（话说我还不知道读者会是谁...或者会不会有读者）可以自己有针对性的去看书。
+
+### C Outline
+
+C这门语言博大精深，本深就是计算机发展成熟之后给科研人员和Prof使用的语言，因此对于初学者来说就像一把双刃剑，一方面是Powerful，另一方面是Creating Vulnerbilities without knowledge。强调一下，C这门语言的设计思想就是使用者比设计者更知道自己要做什么，因此很多的地方需要自己去注意。
+
+
+
+*To Be Continued*
+
+
+
  need some explaination how this specific line works. I know that this function counts the number of 1's bits, but how exactly this line clears the rightmost 1 bit?
 
 int f(int n) {
