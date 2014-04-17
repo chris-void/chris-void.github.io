@@ -14,10 +14,10 @@ tags:
 ## 英文资料
 
 
-</br></br></br></br>
 
 [How to Contribute](https://wiki.openstack.org/wiki/HowToContribute?setlang=zh)
 </br>
+</br></br></br></br>
 
 [OpenStack开发者社区](https://launchpad.net/openstack)
 
