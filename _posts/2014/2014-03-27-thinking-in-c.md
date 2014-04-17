@@ -2,7 +2,6 @@
 ---
 
 ### 题外话 
-
 *先说点题外话，之所以想写这篇blog也是因为我现在在看的Jon Erickson的Hacking The Art of Exploitation。看过之后对C Programming有了完全不一样的看法，其实随着后来接触的Programming Language越来越多，自己对Programming的认识也越来越深入，接触了函数式的Haskell，脚本语言的Python Ruby，发现对C、C++又有了全新的认识。 If you think you know C Programming pretty well, strongly recommand you the book written by Jon Erickson. *
 
 ## C Programming Language
@@ -11,7 +10,19 @@
 
 ### C Outline
 
-C这门语言博大精深，本深就是计算机发展成熟之后给科研人员和Prof使用的语言，因此对于初学者来说就像一把双刃剑，一方面是Powerful，另一方面是Creating Vulnerbilities without knowledge。强调一下，C这门语言的设计思想就是使用者比设计者更知道自己要做什么，因此很多的地方需要自己去注意。
+C这门语言博大精深，本深就是计算机发展成熟之后给科研人员和Prof使用的语言，因此对于初学者来说就像一把双刃剑，一方面是Powerful，另一方面是Creating Vulnerbilities without acknowledge。强调一下，C这门语言的设计思想就是使用者比设计者更知道自己要做什么，因此很多的地方需要自己去注意。
+
+简单总结一下应该掌握的内容:
+
+先从header入手
+
+对于<stdio.h> 函数`printf` `scanf`的用法
+ 
+对于<stdlib.h> 函数
+
+对于<string.h> 函数
+
+对于<math.h>
 
 
 
