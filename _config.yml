@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
-url: http://chrisvoid.github.io
+url: http://chris-void.github.io
 author: chrisVoid 
 pygments: true
 paginate: 24
