@@ -3,10 +3,10 @@ title: About me
 layout: page
 comments: yes
 ---
-Hey there! Here is some personal infomation about myself.
+
+Hey there! Here are some personal infomations about myself.
 
 ### Shuwen SUN
-
 
 Studying at School of Software, SYSU
 Working at Vinzor (Computer Networks and Information Security Lab)
