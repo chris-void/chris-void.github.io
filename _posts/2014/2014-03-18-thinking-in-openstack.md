@@ -28,6 +28,12 @@ tags:
 
 [org mailing list](http://lists.openstack.org/cgi-bin/mailman/listinfo)
 
+### Debuging
+
+[How do I debug OpenStack?](https://ask.openstack.org/en/question/148/how-do-i-debug-openstack/)   
+
+[Debug Openstack code Local / Remote with Eclipse and PyDev Plug-In](http://ilearnstack.com/2013/05/30/debug-openstack-code-local-remote-with-eclipse-and-pydev-plug-in/)
+
 </br></br></br></br>
 
 ## 中文资料
