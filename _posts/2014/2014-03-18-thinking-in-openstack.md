@@ -51,9 +51,11 @@ tags:
 [一个博客](http://blog.csdn.net/matt_mao)    
 [又一个博客](http://blog.csdn.net/quqi99)    
 
-Eclipse 
 
-[PyDev](http://update-production-pydev.s3.amazonaws.com/pydev/updates)
+
+## Eclipse 
+
+PyDev    http://update-production-pydev.s3.amazonaws.com/pydev/updates
 
 pydev-interpreter-python进行设置，在value中设置python安装目录。默认的为usr/local/bin/python2.7 我安装的是2.7。
 
@@ -63,4 +65,8 @@ F9 Run in the interpreter
 
 F5 Step in to the func
 
+
+### Eclipse导入已有工程
+
+[Link](http://blog.sina.com.cn/s/blog_499fb18d0100jhac.html)
 
