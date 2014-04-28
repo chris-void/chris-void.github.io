@@ -55,7 +55,8 @@ tags:
 
 ## Eclipse 
 
-PyDev    http://update-production-pydev.s3.amazonaws.com/pydev/updates
+PyDev         
+http://update-production-pydev.s3.amazonaws.com/pydev/updates
 
 pydev-interpreter-python进行设置，在value中设置python安装目录。默认的为usr/local/bin/python2.7 我安装的是2.7。
 
