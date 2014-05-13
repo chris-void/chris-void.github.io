@@ -72,6 +72,9 @@ brew uograde
 //需要设置User
 ```
 
+[ SublimeClang插件问题](http://106201.html.blog.chinaunix.net/uid-28894229-id-3839961.html)
+
+
 ## Some Other Tools
 
 ### Xcode
