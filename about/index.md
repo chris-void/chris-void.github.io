@@ -6,11 +6,7 @@ comments: yes
 
 Hey there! Here are some personal infomations about myself.
 =======
-"### **Hey there!** Here is some personal infomation about myself.
 
-## Shuwen SUN
->>>>>>> 61942d73c151f3c27de41abd9f719f004edcc137
-"
 ### Shuwen SUN
 
 Studying at **School of Software, SYSU**    
