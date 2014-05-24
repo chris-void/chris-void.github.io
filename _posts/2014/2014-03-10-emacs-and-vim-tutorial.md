@@ -54,6 +54,19 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 使用入门:
 
 
+```
+//配置
+{
+"ignored_packages":
+    [
+        "Vintage"
+    ],
+    "theme": "Soda Dark.sublime-theme",
+    "font_size": 12
+    
+}
+```
+
 
 可能有人会问:既然已经有了这些界面功能都完美的编辑器,为什么我们还要学习使用Vim/Emacs这种老古董呢?
 
