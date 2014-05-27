@@ -16,7 +16,7 @@ tags:
 [ Openstack之Cinder服务初探](http://blog.csdn.net/luo_brian/article/details/8592692)
 
 [Cinder](https://wiki.openstack.org/wiki/Cinder)
-
+</br></br></br>
 [Redhat 6.3 openstack的cinder安装配置](http://mars914.iteye.com/blog/1830941)
 
 [Openstack cinder命令学习笔记（一）](http://www.cnblogs.com/youjianxiaoxiang/archive/2012/12/18/2823511.html)
@@ -26,6 +26,7 @@ tags:
 [OpenStack G版Cinder源码分析](http://www.linuxidc.com/Linux/2013-05/84492.htm)
 
 
-[OpenStack Cinder源码分析之一](http://blog.csdn.net/gaoxingnengjisuan/article/details/17722991)
+[OpenStack Cinder源码分析之一](http://blog.csdn.net/gaoxingnengjisuan/article/details/17722991)     
+
 [OpenStack源码分析之cinder-api服务起步](http://www.reader8.cn/jiaocheng/20130316/1817391.html)
 
