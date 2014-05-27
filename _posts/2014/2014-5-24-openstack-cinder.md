@@ -26,7 +26,9 @@ tags:
 [OpenStack G版Cinder源码分析](http://www.linuxidc.com/Linux/2013-05/84492.htm)
 
 
-[OpenStack Cinder源码分析之一](http://blog.csdn.net/gaoxingnengjisuan/article/details/17722991)     
+[OpenStack Cinder源码分析之一](http://blog.csdn.net/gaoxingnengjisuan/article/details/17722991)        
+
+
 
 [OpenStack源码分析之cinder-api服务起步](http://www.reader8.cn/jiaocheng/20130316/1817391.html)
 
