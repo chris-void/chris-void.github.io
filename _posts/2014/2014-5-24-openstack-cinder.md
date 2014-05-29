@@ -53,3 +53,6 @@ tags:
 [OpenStack安装部署管理中常见问题解决方法（OpenStack-Lite-FAQ）](http://www.open-open.com/lib/view/open1342256392776.html)
 
 
+
+
+[pycharm key](http://www.geek521.com/?p=1951)
