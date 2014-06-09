@@ -176,7 +176,8 @@ Api.py：通常处理与本组件有关的请求。
 /cinder/volume/qos_specs.py：QoS功能的实现；
 
 **QoS（Quality of Service）服务质量，是网络的一种安全机制；是用来解决网络延迟和阻塞等问题的一种技术；在正常情况下，如果网络只用于特定的无时间限制的应用系统，并不需要QoS；比如Web应用，或E-mail设置等；但是对关键应用和多媒体应用就十分必要；当网络过载或拥塞时，QoS能确保重要业务量不受延迟或丢弃，同时保证网络的高效运行；**
-    def create(context, name,specs=None):在数据库中建立一个qos_specs；
+    
+	def create(context, name,specs=None):在数据库中建立一个qos_specs；
     def update(context, qos_specs_id,specs):更新数据库中QOS功能的数据信息
 											；
     def delete(context, qos_specs_id,force=False):标志QOS功能为删除标识；
@@ -204,7 +205,7 @@ Api.py：通常处理与本组件有关的请求。
     def get_volume_type_qos_specs(volume_type_id):根据给定的卷类型获取所有QOS功能相关的信息；
 
 /cinder/volume/flows/base.py：flow的基类实现；
-   def _make_task_name(cls,addons=None):获取任务类的名称；
+		def _make_task_name(cls,addons=None):获取任务类的名称；
     class CinderTask(task.Task):所有cinder任务的基类；
     class InjectTask(CinderTask):这个类实现了注入字典信息到flow中；
 
@@ -219,26 +220,26 @@ Api.py：通常处理与本组件有关的请求。
 /cinder/volume/drivers/netapp----NetApp卷存储驱动；   
 /cinder/volume/drivers/nexenta----Nexenta卷存储驱动；  
 /cinder/volume/drivers/san----San卷存储驱动；   
-/cinder/volume/drivers/vmware----VMware卷存储驱动；
-/cinder/volume/drivers/windows----Windows卷存储驱动；
-/cinder/volume/drivers/xenapi----XenApi卷存储驱动；
-/cinder/volume/drivers/coraid.py----Coraid卷存储驱动；
-/cinder/volume/drivers/eqlx.py----DELL卷存储驱动；
-/cinder/volume/drivers/gpfs.py----GPFS卷存储驱动；
-/cinder/volume/drivers/nfs.py----NFS卷存储驱动；
-/cinder/volume/drivers/rbd.py----RADOS块设备驱动；
-/cinder/volume/drivers/scality.py----ScalitySOFS卷驱动；
-/cinder/volume/drivers/solidfire.py----SolidFire卷驱动；
-/cinder/volume/drivers/storwize_svc.py----IBMStorwize和SVC卷驱动；
-/cinder/volume/drivers/xiv_ds8k.py----IBMXIV和DS8K存储系统卷驱动；
-/cinder/volume/drivers/zadara.py----VPSA卷驱动；
+/cinder/volume/drivers/vmware----VMware卷存储驱动；   
+/cinder/volume/drivers/windows----Windows卷存储驱动；   
+/cinder/volume/drivers/xenapi----XenApi卷存储驱动；   
+/cinder/volume/drivers/coraid.py----Coraid卷存储驱动；   
+/cinder/volume/drivers/eqlx.py----DELL卷存储驱动；   
+/cinder/volume/drivers/gpfs.py----GPFS卷存储驱动；   
+/cinder/volume/drivers/nfs.py----NFS卷存储驱动；    
+/cinder/volume/drivers/rbd.py----RADOS块设备驱动；   
+/cinder/volume/drivers/scality.py----ScalitySOFS卷驱动；    
+/cinder/volume/drivers/solidfire.py----SolidFire卷驱动；    
+/cinder/volume/drivers/storwize_svc.py----IBMStorwize和SVC卷驱动；   
+/cinder/volume/drivers/xiv_ds8k.py----IBMXIV和DS8K存储系统卷驱动；   
+/cinder/volume/drivers/zadara.py----VPSA卷驱动；   
 
 
 
 
 ### /bin/cinder-volume
 
-cinder-volume是cinder功能的核心,因此从这里入手
+
 
 
 
