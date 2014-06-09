@@ -34,31 +34,31 @@ Api.py：通常处理与本组件有关的请求。
 
 
 
-+ backup
++ backup    
 卷备份（create、restore、delete） driver（ceph swift tcm）
 
-+ brick
++ brick    
 块设备（还在研究中）
 
-+ compute
++ compute    
 利用novaClient实现卷的快照的建立 删除
 
-+ db
++ db    
 存储键值&当前运行的服务的db的内容
 
-+ image
++ image    
 应用glance作为后端镜像服务
 
-+ keymgr
++ keymgr    
 密钥管理（对称加密）
 
-+ schduler
++ schduler    
 调度器（filter weigh）
 
-+ transfer
++ transfer    
 卷在用户之间的转换
 
-+volume
++ volume    
 50%代码在这里，主要是卷存储的相关知识
 
 **个人研究感觉比较复杂一点的就是backup，schduler，volume三个部分比较复杂一些，其中brick是为H版所专门包含的，以后会脱离Cinder挪到oslo。Schduler模块其实就是衡量如何选择主机的，主要功能就是filter过滤掉不适合做主机的机子，weigh计算权重得到最适合做主机的机子。Volume应该是Cinder的核心，所有和卷存储有关的内容都包含在这里**
