@@ -111,7 +111,8 @@ Api.py：通常处理与本组件有关的请求。
 
 
 /cinder/volume/driver.py：卷的驱动类；
-    class VolumeDriver(object):执行和存储卷相关的命令；
+
+	class VolumeDriver(object):执行和存储卷相关的命令；
         def get_version(self):获取驱动器当前的版本信息；
         def create_volume(self, volume):卷的建立；
         def create_volume_from_snapshot(self, volume, snapshot):根据快照建立卷；
@@ -149,7 +150,8 @@ Api.py：通常处理与本组件有关的请求。
     class FibreChannelDriver(VolumeDriver):执行Fibre Channel volumes的相关命令；
 
 /cinder/volume/manager.py：卷的管理（建立、挂载、卸载以及持久性存储）；
-    class VolumeManager(manager.SchedulerDependentManager):管理可连接的块存储设备；
+    
+	class VolumeManager(manager.SchedulerDependentManager):管理可连接的块存储设备；
         def create_volume(self, context, volume_id, request_spec=None,filter_properties=None, allow_reschedule=True, snapshot_id=None, image_id=None,source_volid=None):建立并导出卷；
         def delete_volume(self, context, volume_id):删除卷的操作；
         def create_snapshot(self, context, volume_id, snapshot_id):调用存储后端的create_snapshot方法，实现调用实现建立并导出快照；
@@ -172,9 +174,11 @@ Api.py：通常处理与本组件有关的请求。
 
 
 /cinder/volume/qos_specs.py：QoS功能的实现；
-QoS（Quality of Service）服务质量，是网络的一种安全机制；是用来解决网络延迟和阻塞等问题的一种技术；在正常情况下，如果网络只用于特定的无时间限制的应用系统，并不需要QoS；比如Web应用，或E-mail设置等；但是对关键应用和多媒体应用就十分必要；当网络过载或拥塞时，QoS能确保重要业务量不受延迟或丢弃，同时保证网络的高效运行；
+
+**QoS（Quality of Service）服务质量，是网络的一种安全机制；是用来解决网络延迟和阻塞等问题的一种技术；在正常情况下，如果网络只用于特定的无时间限制的应用系统，并不需要QoS；比如Web应用，或E-mail设置等；但是对关键应用和多媒体应用就十分必要；当网络过载或拥塞时，QoS能确保重要业务量不受延迟或丢弃，同时保证网络的高效运行；**
     def create(context, name,specs=None):在数据库中建立一个qos_specs；
-    def update(context, qos_specs_id,specs):更新数据库中QOS功能的数据信息；
+    def update(context, qos_specs_id,specs):更新数据库中QOS功能的数据信息
+											；
     def delete(context, qos_specs_id,force=False):标志QOS功能为删除标识；
     def delete_keys(context,qos_specs_id, keys):设置指定的目标QOS功能的标识为delete标识；
     def get_associations(context,specs_id):根据给定的qos_specs的id值获取所有相关的卷的类型信息；
@@ -183,13 +187,14 @@ QoS（Quality of Service）服务质量，是网络的一种安全机制；是�
     def disassociate_all(context,specs_id):从所有的实体中消除与specs_id相关联的qos_specs；
     def get_all_specs(context,inactive=False, search_opts={}):获取所有符合条件的qos_specs；
     def get_qos_specs(ctxt, id):根据给定的id值获取单个的QOS功能；
-def get_qos_specs_by_name(context,name):根据给定的名称获取单个QOS功能的相关信息；
+	def get_qos_specs_by_name(context,name):根据给定的名称获取单个QOS功能的相关信息；
 
 
 /cinder/volume/utils.py：卷相关的实用工具和方法；
 
 /cinder/volume/volume_types.py：内置卷的类型属性相关方法；
-    def create(context, name,extra_specs={}):在数据库中建立一个新的卷的类型；
+   
+	def create(context, name,extra_specs={}):在数据库中建立一个新的卷的类型；
     def destroy(context, id):在数据库中删除卷的类型信息；
     def get_all_types(context,inactive=0, search_opts={}):获取所有数据库中没有删除的卷的类型；
     def get_volume_type(ctxt, id):根据给定id来检索获取单个的卷的类型；
@@ -208,12 +213,12 @@ def get_qos_specs_by_name(context,name):根据给定的名称获取单个QOS功�
 
 
 
-/cinder/volume/drivers/emc----emc卷存储驱动；
-/cinder/volume/drivers/hds----hus卷存储驱动；
-/cinder/volume/drivers/huawei----huawei卷存储驱动；
-/cinder/volume/drivers/netapp----NetApp卷存储驱动；
-/cinder/volume/drivers/nexenta----Nexenta卷存储驱动；
-/cinder/volume/drivers/san----San卷存储驱动；
+/cinder/volume/drivers/emc----emc卷存储驱动；    
+/cinder/volume/drivers/hds----hus卷存储驱动；    
+/cinder/volume/drivers/huawei----huawei卷存储驱动；   
+/cinder/volume/drivers/netapp----NetApp卷存储驱动；   
+/cinder/volume/drivers/nexenta----Nexenta卷存储驱动；  
+/cinder/volume/drivers/san----San卷存储驱动；   
 /cinder/volume/drivers/vmware----VMware卷存储驱动；
 /cinder/volume/drivers/windows----Windows卷存储驱动；
 /cinder/volume/drivers/xenapi----XenApi卷存储驱动；
