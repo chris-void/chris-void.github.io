@@ -11,6 +11,11 @@ tags:
 
 # Deep in OpenStack-Cinder
 
+Outline
+---
+1.关于Cinder的介绍
+2.关于snapshot,image,
+3.Cinder代码研究(backup, schduler, volume)
 
 ## 关于Cinder的介绍
 
@@ -22,10 +27,11 @@ Cinder对块数据实现了多种的存储管理方式。主要有LVM，nfs，IS
 
 在nova的源代码libvirt目录下有一个volume.py实现对应cinder的，实现对于实际运行volume相关操作。针对cinder的不同存储类型，对应的有不同的Volume Driver类型，如LibvirtVolumeDriver，LibvirtNetVolumeDriver，LibvirtISCSIVolumeDriver，LibvirtNFSVolumeDriver等。这些类都继承于LibvirtBaseVolumeDriver这个基类，主要实现的功能其实就是构造libvirt 中attachDeviceFlags 函数需要的xml格式参数（挂载卷时attach_volume），或者构造实例xml时添加device，和实现一些功能的命令执行如LibvirtISCSIVolumeDriver中一些iscsi命令。
 
+## Snapshot & Image
+
+
 
 ## Cinder代码研究
-
-
 
 Api.py：通常处理与本组件有关的请求。
 
