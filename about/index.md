@@ -4,7 +4,7 @@ layout: page
 comments: yes
 ---
 
-Hey there! Here are some personal information about myself.
+Hey there! Here are some personal information about chrisVoid.
 =======
 
 ## Shuwen SUN
