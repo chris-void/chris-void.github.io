@@ -12,7 +12,7 @@ Hey there! Here are some personal information about chrisVoid.
 Studying at **School of Software, SYSU**    
 Working at **Vinzor** (Computer Networks and Information Security Lab)
 
-**Major** in *Computer Software Engineering, Computer Graphics*    
+*Major* in **Computer Software Engineering, Computer Graphics**    
 **Interested** in *Computer Security, Cloud Computing, Computer Vison, Machine Learning, Data Mining, Pattern Matching*    
 
 Official Email: chris.void.92[at]gmail.com     
