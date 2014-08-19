@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ceph and OpenStack
+title: OpenStack and Ceph
 categories: 
 - OpenStack 
 tags:
@@ -12,6 +12,18 @@ tags:
 # 引言
 
 关于OpenStack, 作为一种成熟开源的云计算技术已经日益受到关注,在这里主要是想根据自己对OpenStack和Ceph的理解和实践写一点总结和感悟,怕自己忘了.
+
+
+---
+#资源汇总
+
+[OpenStack安装部署管理中常见问题解决方法（OpenStack-Lite-FAQ）](http://blog.csdn.net/hilyoo/article/details/7746634)
+[OpenStack云平台的网络模式及其工作机制](http://blog.csdn.net/hilyoo/article/details/7721401)
+[OpenStack Hacker养成指南](https://www.ustack.com/blog/openstack_hacker/)
+
+
+
+---
 
 ## Openstack存储技术
 
