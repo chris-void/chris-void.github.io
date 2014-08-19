@@ -17,10 +17,20 @@ tags:
 ---
 #资源汇总
 
-[OpenStack安装部署管理中常见问题解决方法（OpenStack-Lite-FAQ）](http://blog.csdn.net/hilyoo/article/details/7746634)
-[OpenStack云平台的网络模式及其工作机制](http://blog.csdn.net/hilyoo/article/details/7721401)
-[OpenStack Hacker养成指南](https://www.ustack.com/blog/openstack_hacker/)
-
+[OpenStack安装部署管理中常见问题解决方法（OpenStack-Lite-FAQ）](http://blog.csdn.net/hilyoo/article/details/7746634)     
+[OpenStack云平台的网络模式及其工作机制](http://blog.csdn.net/hilyoo/article/details/7721401)     
+[OpenStack Hacker养成指南](https://www.ustack.com/blog/openstack_hacker/)      
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
+[]()    
 
 
 ---
