@@ -1,7 +1,12 @@
 ---
-  
----
-
+layout: post
+title: Ceph and Swift
+categories: 
+- OpenStack 
+tags:
+- ceph
+- swift
+--
 
 [华为章宇：如何学习开源项目及Ceph的浅析](http://www.csdn.net/article/2014-04-10/2819247-how-to-learn-opensouce-project-&-ceph)      
 [《Ceph浅析》系列文章发布](http://www.infoq.com/cn/news/2014/01/ceph-overview)     

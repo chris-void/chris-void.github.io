@@ -1,5 +1,12 @@
 ---
----
+layout: post
+title: Thinking in C
+categories: 
+- Programming 
+tags:
+- program language
+--
+
 
 ### 题外话 
 *先说点题外话，之所以想写这篇blog也是因为我现在在看的Jon Erickson的Hacking The Art of Exploitation。看过之后对C Programming有了完全不一样的看法，其实随着后来接触的Programming Language越来越多，自己对Programming的认识也越来越深入，接触了函数式的Haskell，脚本语言的Python Ruby，发现对C、C++又有了全新的认识。 If you think you know C Programming pretty well, strongly recommand you the book written by Jon Erickson. *
