@@ -8,7 +8,7 @@ tags:
 - cloud computing
 ---
 
-*首先分享一篇有关学习开源知识的文章:*
+
 [开源项目学习方法ABC](http://yizhaolingyan.net/?p=123)
 
 ## 英文资料
