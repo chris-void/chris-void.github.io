@@ -9,7 +9,7 @@ Hey there! Here are some personal information about chrisVoid.
 
 ## Shuwen SUN
 
-Studying at **School of Software, SYSU**    
+Studying as a **senior student** at **School of Software, SYSU**    
 Working at **Vinzor** (Computer Networks and Information Security Lab)
 
 Major in **Computer Software Engineering, Computer Graphics**    
