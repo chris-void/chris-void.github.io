@@ -3,8 +3,6 @@ layout: post
 title: Thoughts of UNIX
 catagories:
 - Unix
-
-
 ---
 
 ## 1st of all What is UNIX?
