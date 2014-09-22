@@ -14,6 +14,13 @@ tags:
 关于OpenStack, 作为一种成熟开源的云计算技术已经日益受到关注,在这里主要是想根据自己对OpenStack和Ceph的理解和实践写一点总结和感悟,怕自己忘了.
 
 
+### Devstack
+
+```
+git clone https://github.com/openstack-dev/devstack.git -b stable/icehouse
+```
+
+
 ---
 #资源汇总
 
