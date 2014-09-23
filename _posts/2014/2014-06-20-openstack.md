@@ -1,10 +1,9 @@
 ---
 layout: post
-title: OpenStack and Ceph
+title: OpenStack 
 categories: 
 - OpenStack 
 tags:
-- ceph
 - openstack
 ---
 
@@ -29,7 +28,7 @@ OpenStack是由Rackspace与NASA于2010年7月共同推出的云计算开源项�
 
 ##推荐下载资源：
 
-[openstack快速进阶](http://download.csdn.net/detail/bilyyang/5810571)    
+[OpenStack快速进阶](http://download.csdn.net/detail/bilyyang/5810571)    
 [OpenStack运维指南](http://download.csdn.net/detail/adela_09/5130471)     
 [Openstack基础讲解](http://download.csdn.net/detail/necessary8/4474697)   
 [openstack 安装以及配置教程超详细](http://download.csdn.net/detail/zhenxi537/4427341)    
