@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cinder in Openstack
+title: Deep in OpenStack-Cinder
 categories:
 - Vinzor
 tags:
@@ -8,8 +8,7 @@ tags:
 - cinder
 ---
 
-
-# Deep in OpenStack-Cinder
+[Notes for Cinder](https://github.com/chris-void/OpenStack-Understand-Guide/tree/master/cinder-understand)
 
 Outline
 ---
@@ -36,9 +35,6 @@ Cinder对块数据实现了多种的存储管理方式。主要有LVM，nfs，IS
 Api.py：通常处理与本组件有关的请求。
 
 /driver：通常是继承本部分的driver.py的基类开发出来的适应不同情况的具体使用方法。
-
-
-
 
 + backup    
 卷备份（create、restore、delete） driver（ceph swift tcm）
