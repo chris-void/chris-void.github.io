@@ -8,13 +8,16 @@ tags:
 - cinder
 ---
 
-[Notes for Cinder](https://github.com/chris-void/OpenStack-Understand-Guide/tree/master/cinder-understand)
+[Notes for Cinder](https://github.com/chris-void/OpenStack-Understand-Guide/tree/master/cinder-understand)    
+    ^
+完整版请戳
+
 
 Outline
 ---
-1.关于Cinder的介绍
-2.关于snapshot,image,
-3.Cinder代码研究(backup, schduler, volume)
+1.关于Cinder的介绍   
+2.关于snapshot,image   
+3.Cinder代码研究(backup, scheduler, volume)    
 
 ## 关于Cinder的介绍
 
