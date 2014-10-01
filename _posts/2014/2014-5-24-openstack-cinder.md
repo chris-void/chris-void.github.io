@@ -9,8 +9,8 @@ tags:
 ---
 
 [Notes for Cinder](https://github.com/chris-void/OpenStack-Understand-Guide/tree/master/cinder-understand)    
-    ^
-完整版请戳
+    ^    
+完整版请戳    
 
 
 Outline
