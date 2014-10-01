@@ -9,7 +9,11 @@ Hey there! Here are some personal information about chrisVoid.
 
 ## Shuwen SUN
 
+<<<<<<< HEAD
 **OpenStacker**    
+=======
+**OpenStacker，Open Source Dude**
+
 Studying as a **senior student** at **School of Software, SYSU**    
 Working at **Vinzor** (Computer Networks and Information Security Lab)
 
