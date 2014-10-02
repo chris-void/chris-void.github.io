@@ -9,9 +9,6 @@ Hey there! Here are some personal information about chrisVoid.
 
 ## Shuwen SUN
 
-<<<<<<< HEAD
-**OpenStacker**    
-=======
 **OpenStacker，Open Source Dude**
 
 Studying as a **senior student** at **School of Software, SYSU**    
@@ -24,3 +21,9 @@ Official Email: chris.void.92[at]gmail.com
 Personal Email: chris-void[at]outlook.com
 
 Github: [https://github.com/chris-void](https://github.com/chris-void)
+
+## Donations
+
+If Projects has helped you in any way, and you'd like to help the developer, please consider donating.
+
+**- Gittip:** [https://gratipay.com/chris-void/](https://gratipay.com/chris-void/)
