@@ -18,6 +18,19 @@ OpenStack是由Rackspace与NASA于2010年7月共同推出的云计算开源项�
 
 [代码托管地址](https://github.com/openstack/openstack)   
 
+### 关于OpenStack
+
+自己开始研究和学习OpenStack也差不多有半年多了,开始的时候我还是三年级的小菜鸟,对于Linux的认识就仅限于用来写写课程作业,平时上上网.在实验室的锻炼(感谢师兄们和老板)自己对于Linux的认识和使用都有长足的进步,不敢说是什么高手,但是入门加上经常排错也可以说经验比较丰富了,遇到问题也可以思考加上实践尝试去解决了.OpenStack作为一种提供计算机虚拟化服务的云计算技术,最适合进行部署的环境当然是Linux,在网络部分Linux相较与windows server有巨大的优势. OpenStack宣称支持CentOS,Ubuntu和Fedora,不过我一般还是用Ubuntu的Desktop和server, 为什么呢?第一是ubuntu的安装比较省心,基本的软件包都有,平时自己的工作站去折腾还好,真要你对四五个环境一个一个折腾就算是写自动化脚本也受不了;第二是因为在对于OpenStack的支持上Ubuntu要强于其他的系统,估计是bug比较少吧.
+
+好了,废话说完,第一个问题来了,OpenStack是怎么一回事呢?
+
+就我个人的理解,OpenStack的每个组件都是独立的,组件之间通过nova-api,rabbitmq,mysql等等来进行合作,实现
+
+
+
+
+
+
 ##推荐相关文档：
 
 [如何学习OpenStack，如何成为OpenStack工程师？](http://blog.csdn.net/z_lstone/article/details/14127227)   
