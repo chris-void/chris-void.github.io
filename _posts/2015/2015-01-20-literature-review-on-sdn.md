@@ -1,14 +1,12 @@
 
-
-
 ---
-layout: post
-title: Literature Review on SDN
-categories: 
-- SDN
-tags:
-- review
-- sdn
+layout: post    
+title: Literature Review on SDN    
+categories:     
+- SDN    
+tags:    
+- review   
+- sdn    
 ---
 
 ## OpenFlow通信流程
