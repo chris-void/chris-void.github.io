@@ -93,3 +93,6 @@ git push
 
 
 
+[git-https-to-ssh](https://help.github.com/articles/changing-a-remote-s-url/#switching-remote-urls-from-https-to-ssh)
+
+

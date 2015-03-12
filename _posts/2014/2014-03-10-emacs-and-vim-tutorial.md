@@ -137,10 +137,27 @@ sudo brew install emacs
 
 使用操作入门:
 
+`curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh`
+
+~/.emacs
+```
+(global-linum-mode t)                                                                                                                                     
+(setq linum-format "%2d ")
+(fset 'yes-or-no-p 'y-or-n-p)
+(global-set-key (kbd "C-x o") 'switch-window)
 ```
 
-
+Now in ~/.bashrc
 ```
+alias ema='emacs -daemon'
+alias ec='emacsclient -nw'
+alias ..='cd ..'
+alias suod='sudo '
+alias sduo='sudo '
+alias apt='sudo apt-get'
+alias cls='clear'
+```
+
 
 
 
