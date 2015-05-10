@@ -44,14 +44,14 @@ tags:
 ## Python & 操作系统、shell编程
 
 + Python常用库
-+ 操作系统概念、KVM与Linux
++ 操作系统概念、KVM与Linux    
 
-i.   KVM & QEMU
-ii.  KVM & Cgroup
-iii. OpenStack、libvirt & KVM
-iv.  网络 & KVM, bridge,ovs,namespace
-v.   网络与Vlan
-vi.  iptables,ebtables,openstack如何应用iptables
-vii. iptables调试
+i.   KVM & QEMU    
+ii.  KVM & Cgroup    
+iii. OpenStack、libvirt & KVM    
+iv.  网络 & KVM, bridge,ovs,namespace    
+v.   网络与Vlan    
+vi.  iptables,ebtables,openstack如何应用iptables    
+vii. iptables调试   
 
 ## OpenStack编程
