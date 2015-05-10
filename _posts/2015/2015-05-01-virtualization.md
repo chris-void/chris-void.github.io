@@ -45,6 +45,7 @@ tags:
 
 + Python常用库
 + 操作系统概念、KVM与Linux
+
 i.   KVM & QEMU
 ii.  KVM & Cgroup
 iii. OpenStack、libvirt & KVM
