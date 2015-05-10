@@ -46,11 +46,11 @@ tags:
 + Python常用库
 + 操作系统概念、KVM与Linux    
 
-i.   KVM & QEMU    
+ i.   KVM & QEMU    
 ii.  KVM & Cgroup    
 iii. OpenStack、libvirt & KVM    
 iv.  网络 & KVM, bridge,ovs,namespace    
-v.   网络与Vlan    
+ v.   网络与Vlan    
 vi.  iptables,ebtables,openstack如何应用iptables    
 vii. iptables调试   
 
