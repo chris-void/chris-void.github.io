@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: HOWTO setup arch on Mac Virtual box
@@ -8,7 +9,7 @@ tags:
 # reference
 [Setting up an Arch Linux VM in VirtualBox](http://www.cs.columbia.edu/~jae/4118-LAST/arch-setup-2015-1.html)
 
-Sadly there seems to be a problem. 
+Sadly there seems to be a problem.
 
 ### Solution:
 
@@ -43,3 +44,7 @@ reboot
 
 Make sure you remove the live CD or USB while rebooting so you don't boot the live environment again. You should find it boots now. It worked for me. :)
 
+http://www.linuxveda.com/2015/02/18/arch-linux-tutorial-updated-feb-2015/12/
+https://www.pckr.co.uk/arch-grub-mkconfig-lvmetad-failures-inside-chroot-install/
+
+https://bbs.archlinux.org/viewtopic.php?id=168861
