@@ -35,6 +35,7 @@ C这门语言博大精深，本深就是计算机发展成熟之后给科研人�
 
 *To Be Continued*
 
+```
 
 
  need some explaination how this specific line works. I know that this function counts the number of 1's bits, but how exactly this line clears the rightmost 1 bit?
@@ -93,3 +94,7 @@ You can see that only 0 and the powers of two (1, 2 and 4) result in a 000/false
 
 See the full Bit Twiddling Hacks document for all sorts of other wonderful (or dastardly, depending on your viewpoint) hackery.
 
+
+
+
+```
