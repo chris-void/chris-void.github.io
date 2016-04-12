@@ -7,10 +7,6 @@ tags:
 - python
 ---
 
-
-
-# Thinking in Python 
-
 ## Reasons
 
 Recently I am involved in some open source project in Python. Specifically, [OpenStack/Swift](). And in a forseeing future, I may involve in more projects related with Python, especially Python is powerful language only with a solvable performance issue, which is actully meaning that rewriting part of the project in C lang will make it go away. This triggers the creation of this article.
@@ -31,6 +27,6 @@ After all, I am not saying that Python should be your goto choice for all your w
 
 
 ## reference 
-[Doxygen](https://www.stack.nl/~dimitri/doxygen/manual/index.html)
-[Python-Arch Wiki]([Linux Coding Style](https://wiki.archlinux.org/index.php/python)
-[Python/Virtualenv-Arch Wiki](https://wiki.archlinux.org/index.php/Python/Virtualenv)
+[Doxygen](https://www.stack.nl/~dimitri/doxygen/manual/index.html)   
+[Python-Arch Wiki]([Linux Coding Style](https://wiki.archlinux.org/index.php/python)   
+[Python/Virtualenv-Arch Wiki](https://wiki.archlinux.org/index.php/Python/Virtualenv)   
