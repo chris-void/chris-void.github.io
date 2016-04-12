@@ -18,7 +18,7 @@ Recently I am involved in some open source project in Python. Specifically, [Ope
 
 ## First of all, some experence and advice
 
-If you are just start to use and learn Python, strongly recommand the [LPTHW]() and another blog I wrote. After finished those materials, one thing that you should always keep in mind is: ALWAYS USE VIRTUALENV. I don't think I need to remind you how messy it will be if you try to constantly modifying and changing Python version or installing packages using pip  can be annoying. Never try to use directly access Python unless you are working some small Python programs.   
+If you are just start to use and learn Python, strongly recommand the [LPTHW]() and another blog I wrote. After finished those materials, one thing that you should always keep in mind is: ALWAYS USE VIRTUALENV. I don't think I need to remind you how messy it will be if you try to constantly modifying and changing Python version or installing packages using [pip] can be how annoying. Never try to use directly access Python unless you are working some small Python programs. **Use virtualenv. And use it well.**   
 
 ## Learn from the best
 
@@ -32,3 +32,5 @@ After all, I am not saying that Python should be your goto choice for all your w
 
 ## reference 
 [Doxygen](https://www.stack.nl/~dimitri/doxygen/manual/index.html)
+[Python-Arch Wiki]([Linux Coding Style](https://wiki.archlinux.org/index.php/python)
+[Python/Virtualenv-Arch Wiki](https://wiki.archlinux.org/index.php/Python/Virtualenv)
