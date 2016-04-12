@@ -1,9 +1,10 @@
-
 ---
 layout: post
 title: HOWTO setup arch on Mac Virtual box
+categories: 
+- thoughts
 tags:
- - howto
+- howto
 ---
 
 # reference
