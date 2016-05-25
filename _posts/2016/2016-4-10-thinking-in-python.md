@@ -18,7 +18,8 @@ If you are just start to use and learn Python, strongly recommand the [LPTHW]() 
 
 ## Learn from the best
 
-Generally speaking, OpenStack/Swift is the first big ass Python project I try to work on. Although I have read some code from other large Python wrote projects, it is the first time I try to fix a bug and thus, I have to figure out the way it works by myself. The philosify in Swift is a treasure to me and I am still benefiting from it. So, remember to contributing or modify some real life open source Python projects, so that you can learn from the best.  
+Generally speaking, OpenStack/Swift is the first big ass Python project I 
+try to work on. Although I have read some code from other large Python wrote projects, it is the first time I try to fix a bug and thus, I have to figure out the way it works by myself. The philosify in Swift is a treasure to me and I am still benefiting from it. So, remember to contributing or modify some real life open source Python projects, so that you can learn from the best.  
 
 ## Always remember to doc
 
@@ -30,3 +31,15 @@ After all, I am not saying that Python should be your goto choice for all your w
 [Doxygen](https://www.stack.nl/~dimitri/doxygen/manual/index.html)   
 [Python-Arch Wiki]([Linux Coding Style](https://wiki.archlinux.org/index.php/python)   
 [Python/Virtualenv-Arch Wiki](https://wiki.archlinux.org/index.php/Python/Virtualenv)   
+
+
+#### unconfirmed reference
+[](http://python.jobbole.com/85060/)
+
+[](http://python.jobbole.com/85056/)
+
+[](http://python.jobbole.com/85005/)
+
+[](http://python.jobbole.com/84986/)
+
+[]()
