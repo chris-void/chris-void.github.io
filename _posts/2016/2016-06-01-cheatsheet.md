@@ -11,12 +11,14 @@ tags:
 
 ## Emacs
 
-**git**   
-    C-x g
+**git**
+
+```C-x g```
 
 **igrep**
-    C-x `
-
+```
+C-x `
+```
 
 ## reference 
 []()
