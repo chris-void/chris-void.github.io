@@ -5,6 +5,21 @@ description: 在Git流行的时代,入门
 category: blog
 ---
 
+# Pro Git
+
+### git cheatsheet
+
+**git status**
+
+```sh
+$ git status -s
+$ git diff --stat
+$ git diff --cached --stat
+$ git diff HEAD --stat
+```
+
+
+
 
 ## What is Git / Github
 
