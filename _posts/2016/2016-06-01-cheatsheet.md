@@ -20,6 +20,7 @@ C-x g
 ```sh
 C-x `
 ```
+
 ## Linux
 
 **wget download**   
@@ -28,16 +29,17 @@ wget -r --no-parent http://abc.tamu.edu/projects/tzivi/repository/revisions/2/ra
 ```
 
 **GNU screen**   
-```sh
-screen
-C-p d       # detach current screen session
-screen -r   # resume last screen session
 
-C-p "       # list windows
-C-p A       # channge window name
-C-p 0       # open window #0
-C-p S       # split
-C-p C-p     # swap window
+```sh
+screen   
+C-p d       # detach current screen session   
+screen -r   # resume last screen session   
+
+C-p "       # list windows   
+C-p A       # channge window name   
+C-p 0       # open window #0    
+C-p S       # split    
+C-p C-p     # swap window    
 ```
 
 
