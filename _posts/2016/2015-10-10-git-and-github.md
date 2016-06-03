@@ -11,7 +11,10 @@ tags:
 # 
 
 ## 
-
+**give up changes and go back**
+```
+git checkout -- .
+```
 
 
 ## reference 
