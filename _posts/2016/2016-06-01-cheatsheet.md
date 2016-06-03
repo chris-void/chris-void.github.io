@@ -34,8 +34,11 @@ wget -r --no-parent http://abc.tamu.edu/projects/tzivi/repository/revisions/2/ra
 screen   
 C-p d       # detach current screen session   
 screen -r   # resume last screen session   
+```
 
-C-p <p>"</p>       # list windows   
+
+<code>C-p "       # list windows</code>   
+```sh
 C-p A       # channge window name   
 C-p 0       # open window #0    
 C-p S       # split    
