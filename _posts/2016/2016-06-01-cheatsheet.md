@@ -35,7 +35,7 @@ screen
 C-p d       # detach current screen session   
 screen -r   # resume last screen session   
 
-C-p "       # list windows   
+C-p <p>"</p>       # list windows   
 C-p A       # channge window name   
 C-p 0       # open window #0    
 C-p S       # split    
