@@ -11,22 +11,23 @@ tags:
 
 ## Emacs
 
-**git**
+**git**   
 ```sh
 C-x g
 ```
 
-**igrep**
+**igrep**   
 ```sh
 C-x `
 ```
 ## Linux
-**wget download**
+
+**wget download**   
 ```sh
 wget -r --no-parent http://abc.tamu.edu/projects/tzivi/repository/revisions/2/raw/tzivi/
 ```
 
-**GNU screen**
+**GNU screen**   
 ```sh
 screen
 C-p d       # detach current screen session
