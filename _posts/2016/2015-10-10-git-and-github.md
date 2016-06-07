@@ -8,17 +8,15 @@ tags:
 - linux
 ---
 
-# 
-
 ## 
 **give up changes and go back**
-```
+```sh
 git checkout -- .
 ```
 
 
 ## reference 
-[](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-[](https://help.github.com/articles/syncing-a-fork/)
+[Configure remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+[Sync fork](https://help.github.com/articles/syncing-a-fork/)
 
-[](https://help.github.com/articles/using-pull-requests/)
+[Use PR](https://help.github.com/articles/using-pull-requests/)
